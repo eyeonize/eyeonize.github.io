@@ -1,32 +1,90 @@
 h1 {
-    color: var(--white);
-    font-size: 2vw;
-    font-family: "Iosevka Web";
-    font-weight: 500;
+  color: var(--white);
+  font-family: "Iosevka Web";
+  font-size: 3vmax;
+}
+
+h2 {
+  color: var(--white);
+  font-family: "Iosevka Web";
+  font-size: 2vmax;
 }
 
 p {
-    color: var(--white);
-    font-size: 1vw;
-    font-family: "Iosevka Web";
-    font-weight: 400;
+  color: var(--white);
+  font-family: "Iosevka Web";
+  font-size: 1vmax;
 }
 
 body {
-    background-color: var(--black);
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  font-family: "Iosevka Web";
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1vmax;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+.page {
+  background-color: var(--darkgray);
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100vh;
+}
+
+.titlebar {
+  background-color: var(--black);
+  width: 70vw;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  break-after: always;
+  box-sizing: border-box;
+  padding-left: 1vw;
 }
 
 .content {
-    display: block;
-    justify-content:left;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-top: 0;
-    background-color: var(--black);
-    width: 50vw;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: var(--black);
+  box-sizing: border-box;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1vw;
 }
 .content ::selection {
-    background-color: var(--white);
-    color: var(--black)
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.separator {
+  background-color: var(--darkgray);
+  width: 0.5vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.navbar {
+  background-color: var(--black);
+  box-sizing: border-box;
+  text-align: left;
+  width: fit-content;
 }
