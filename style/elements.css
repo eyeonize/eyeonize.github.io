@@ -7,7 +7,8 @@ h1 {
 h2 {
   color: var(--white);
   font-family: "Iosevka Web";
-  font-size: 1.5vmax;
+  font-size: 1vmax;
+  font-weight: 500;
 }
 
 p {
@@ -60,19 +61,26 @@ a:hover {
 
 .content {
   box-sizing: border-box;
-  border-style: solid;
-  border-color: var(--gray);
-  border-width: 0.1vmax;
+  border-style: dashed;
+  border-color: var(--darkgray);
+  border-width: 0.2vmax;
   border-collapse: collapse;
+  padding-left: 1vw;
+  padding-right: 1vw;
   width: 100%;
 }
 
 #navbar {
   text-align: left;
   width: fit-content;
-  padding-left: 1vw;
-  padding-right: 1vw;
+  padding-left: 0.5vw;
+  padding-right: 4vw;
   border-right: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #titlebar {
@@ -81,11 +89,32 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   break-after: always;
+  border-top: none;
   border-bottom: none;
-  padding-left: 1vw;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 
 @media (pointer: none), (pointer: coarse) {
+  h1 {
+    font-size: 6vmax;
+  }
+  h2 {
+    font-size: 2vmax;
+  }
+  p {
+    font-size: 2vmax;
+  }
+  a {
+    font-size: 2vmax;
+  }
   .horizontal-container {
     width: 100vw;
   }
